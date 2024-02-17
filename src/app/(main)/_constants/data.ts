@@ -6,6 +6,32 @@ interface projectsProps{
   skills: string[]
 }   
 
+interface navbarOptionsProps{
+  id: number,
+  name: string,
+  href: string
+
+}
+
+export const navbarOptions:navbarOptionsProps[] = [
+  {
+    id:1,
+    name: "Home",
+    href: "#"
+  },
+  {
+    id:2,
+    name: "Projects",
+    href: "#"
+  },
+  {
+    id:3,
+    name: "Contact",
+    href: "#"
+  
+  }
+]
+
 export const about = {
   words1: `
     I'm a tech enthusiast and B.Tech student based in India.`,
