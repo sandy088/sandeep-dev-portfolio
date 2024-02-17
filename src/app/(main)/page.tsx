@@ -6,7 +6,7 @@ import { navbarOptions } from "./_constants/data";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       {/* <FloatingNav navItems={navbarOptions} /> */}
       <HeroSection />
       <AboutSection />
