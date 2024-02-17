@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import profile from "@/../../public/Group.svg";
 import {
   motion,
   useTransform,
@@ -87,7 +88,7 @@ export const AnimatedTooltip = ({
             width={imgWidth}
             src={item.image}
             alt={item.name}
-            className="object-cover !m-0 !p-0 object-top rounded-full border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
+            className="!m-0 !p-0 object-top   group-hover:scale-105 group-hover:z-30  relative transition duration-500"
           />
         </div>
       ))}
