@@ -14,7 +14,7 @@ const myProfile = [
 ];
 const HeroHeading = () => {
   return (
-    <div>
+    <div className="mx-auto">
       <p className=" text-7xl font-bold">
         <span className=" text-8xl mr-2">{"{"}</span>
         {"Ingenious &"}

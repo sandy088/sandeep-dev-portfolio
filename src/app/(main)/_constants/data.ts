@@ -9,7 +9,7 @@ interface projectsProps{
 interface navbarOptionsProps{
   id: number,
   name: string,
-  href: string
+  link: string
 
 }
 
@@ -17,17 +17,27 @@ export const navbarOptions:navbarOptionsProps[] = [
   {
     id:1,
     name: "Home",
-    href: "#"
+    link: "#"
   },
   {
     id:2,
-    name: "Projects",
-    href: "#"
+    name: "About",
+    link: "#"
   },
   {
     id:3,
+    name: "Skills",
+    link: "#"
+  },
+  {
+    id:4,
+    name: "Projects",
+    link: "#"
+  },
+  {
+    id:5,
     name: "Contact",
-    href: "#"
+    link: "#"
   
   }
 ]
