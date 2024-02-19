@@ -1,3 +1,8 @@
+import React from "react";
+import { FaReact } from "react-icons/fa";
+import { FaProjectDiagram } from "react-icons/fa";
+import { VscGithubAction } from "react-icons/vsc";
+
 interface projectsProps{
   title: string
   description: string,
@@ -41,7 +46,28 @@ export const navbarOptions:navbarOptionsProps[] = [
   
   }
 ]
-
+export const aboutContent = [
+  {
+    title: "Collaborative Editing",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+  },
+  {
+    title: "Real time changes",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+  },
+  {
+    title: "Version control",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+  },
+  {
+    title: "Running out of content",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+  },
+];
 export const about = {
   words1: `
     I'm a tech enthusiast and B.Tech student based in India.`,
@@ -59,10 +85,114 @@ export const projects:projectsProps[] = [
     skills:['nextjs14','convex','tailwindcss','typsecript','react']
   },
   {
-    title: "StudyNotion- Full Stack Ed-tech Platform",
-    description: "Edtech Platform for everyone, Sell & Consume Courses",
+    title: "StudyNotion- An Ed-tech Platform",
+    description: "A Full-Stack Edtech Platform for everyone, Sell & Consume Courses",
     href: "https://studynotion-sepia.vercel.app/",
     imgUrl: "https://res.cloudinary.com/daqa5apjj/image/upload/v1707841340/248786666-86f7fd32-2a33-4f2e-93d6-4034fe5e741d_s8z73o.jpg",
     skills:['Reactjs','Expressjs','Nodejs','MongoDB','tailwindcss']
   },
+  {
+    title: "Sendyy -Bulk E-mail Sender",
+    description:
+      "A Robust & free bulk emial sender for everyone",
+    skills: ["React", "Express.js", "MongoDB", "Tailwind", "Nodejs"],
+    imgUrl: 'https://res.cloudinary.com/daqa5apjj/image/upload/v1708356731/Screenshot_2023-11-22_163611_lkp8uw.jpg',
+    href: "https://sendyy-bulk-email-sender.vercel.app/"
+  },
+  
+  {
+    title: "Youtube Clone",
+    description:
+      "Youtube UI Clone with Search, Live videos, trending,etc.",
+    skills: ["React", "Youtube API","Tailwind", "Context API"],
+    imgUrl: 'https://res.cloudinary.com/daqa5apjj/image/upload/v1708356733/Screenshot_2023-11-22_170909_m1rqyy.jpg',
+    href: "https://youtube-clone-react-indol.vercel.app/"
+  },
+  {
+    title: "Discord Generative Ai- bot",
+    description:
+      "A Generative-Ai Discord bot Which can generate Images",
+    skills: ["Nodejs", "AI Image Generator Model", "Discord.js"," Typsecript"],
+    imgUrl: 'https://res.cloudinary.com/daqa5apjj/image/upload/v1708356731/Code_Ai_fep9hs.png',
+    href: "https://github.com/sandy088/Discord-Ai-Art-Generator-bot"
+  },
 ];
+
+export const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+] as const;
+
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "Nextjs",
+  "Java",
+  "C++",
+  "React",
+  "Node.js",
+  "Express.js",
+  "Git & Github",
+  "Tailwind",
+  "Convex",
+  "Firebase",
+  "MongoDB",
+  "Redux Toolkit",
+  "Express",
+  "Docker",
+  "Figma",
+  "Canva",
+  "Go(Learning)"
+  
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Open Source Contributor",
+    location: "@Hactoberfest 2023",
+    description:
+      `Participated in Hacktoberfest 2023, earned swags & goodies for submitting four successful pull requests to diverse open source projects. Developed valuable skills in open source development, including contributing to codebases, writing documentation, and collaborating with other developers. Among the first 40,000 contributors awarded with swags and goodies.`,
+    icon: React.createElement(VscGithubAction),
+    date: "2023",
+  },
+  {
+    title: "Open Source Contributor ",
+    location: "GSSOC 2023",
+    description:
+      "Participated in GSSOC 2023, and Gained lots of learning about open source projects and collborate with developers worldwide",
+    icon: React.createElement(FaProjectDiagram),
+    date: "2023",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "Freelancer",
+    description:
+      "I'm a full-stack developer working as a freelancer. My stack includes React, Redux, TypeScript, Tailwind, Nodejs, Express.js, GraphQL, Prisma and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact),
+    date: "2022 - present",
+  },
+] as const;

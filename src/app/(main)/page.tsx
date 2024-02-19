@@ -1,8 +1,9 @@
 import { FloatingNav } from "../components/ui/floating-navbar";
 import {AboutSection } from "./_components/about.section";
+import Experience from "./_components/experience";
 import { HeroSection } from "./_components/hero.section";
 import { ProjectsSection } from "./_components/projects.section";
-import { navbarOptions } from "./_constants/data";
+import Skills from "./_components/skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ProjectsSection/>
+      <Skills/>
+      {/*  */}
     </div>
   );
 }

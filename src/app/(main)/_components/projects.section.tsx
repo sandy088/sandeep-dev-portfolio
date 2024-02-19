@@ -5,7 +5,11 @@ import { projects } from "../_constants/data";
 
 export const ProjectsSection = () => {
   return (
-    <div className="h-[40rem] w-full max-w-[1200px] mx-auto flex flex-wrap items-center justify-center ">
+    <div className="max-w-[1200px] mx-auto p-4 relative max-h-fit mt-20">
+      <div className=" md:h-[50px] h-[40px]"></div>
+    <h2 className=" text-center text-3xl font-bold mt-5">My Projects</h2>
+
+    <div className="max-h-fit w-full  flex flex-wrap gap-y-24 items-center justify-center py-7 mt-4">
       {projects.map((project, index) => (
         <PinContainer key={index} title={project.title} href={project.href}>
           <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
@@ -21,6 +25,7 @@ export const ProjectsSection = () => {
                 width={300}
                 height={300}
                 alt="Project Image"
+                className=" max-h-[300px]"
               />
             </div>
             <div className="flex flex-1 flex-wrap gap-2 w-full mt-4">
@@ -36,6 +41,7 @@ export const ProjectsSection = () => {
           </div>
         </PinContainer>
       ))}
+    </div>    
     </div>
   );
 };

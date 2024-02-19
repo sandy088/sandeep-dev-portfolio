@@ -1,5 +1,12 @@
+"use client";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
-import { CalendarIcon, Download, Github, Lightbulb, Linkedin } from "lucide-react";
+import {
+  CalendarIcon,
+  Download,
+  Github,
+  Lightbulb,
+  Linkedin,
+} from "lucide-react";
 import {
   HoverCard,
   HoverCardContent,
@@ -8,6 +15,7 @@ import {
 
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { FollowerPointerCard } from "@/app/components/ui/following-pointer";
 
 const HeroAbout = () => {
   return (
@@ -22,10 +30,11 @@ const HeroAbout = () => {
         <div className=" flex items-center gap-3">
           <HoverCard>
             <HoverCardTrigger>
-              <div className=" bg-black p-3 border-2 border-neutral-600 rounded-full">
-              <Github size={20} className=" cursor-pointer" />
-                
+            <FollowerPointerCard title="@sandy088">
+              <div className=" bg-black p-3 border-[3px] border-neutral-600 rounded-full hover:scale-105 transition-transform duration-300 ease-in">
+                <Github size={20} className=" " />
               </div>
+              </FollowerPointerCard>
             </HoverCardTrigger>
             <HoverCardContent className="w-80 border-2 ">
               <div className="flex justify-between space-x-4">
@@ -34,7 +43,7 @@ const HeroAbout = () => {
                   <AvatarFallback>VC</AvatarFallback>
                 </Avatar>
                 <div className="space-y-1">
-                <Github size={20} className=" absolute top-3 right-3" />
+                  <Github size={20} className=" absolute top-3 right-3" />
                   <h4 className="text-sm font-semibold">@sandy088</h4>
                   <p className="text-sm">
                     Hey 👋 Everyone, I am a 👨‍💻 Full-stack web developer with
@@ -53,10 +62,11 @@ const HeroAbout = () => {
           </HoverCard>
           <HoverCard>
             <HoverCardTrigger>
-              <div className=" bg-black p-3 border-2 border-neutral-600 rounded-full">
-              <Linkedin size={20} className=" cursor-pointer" />
-                
-              </div>
+              <FollowerPointerCard title="Sandeep Singh">
+                <div className=" cursor-none bg-black p-3 border-[3px] border-neutral-600 rounded-full hover:scale-105 transition-transform duration-300 ease-in">
+                  <Linkedin size={20} className=" cursor-none" />
+                </div>
+              </FollowerPointerCard>
             </HoverCardTrigger>
             <HoverCardContent className="w-80 border-2 ">
               <div className="flex justify-between space-x-4">
@@ -68,9 +78,17 @@ const HeroAbout = () => {
                   <Linkedin size={20} className=" absolute top-3 right-3" />
                   <h4 className="text-sm font-semibold">Sandeep Singh</h4>
                   <p className="text-sm">
-                  @Google Developers Group Chandigarh | Top Computer Science Voice | JavaScript | React | Node.js | MERN | Full Stack Developer
+                    @Google Developers Group Chandigarh | Top Computer Science
+                    Voice | JavaScript | React | Node.js | MERN | Full Stack
+                    Developer
                   </p>
-                  <div className=" text-xs bg-[#fce3bc] px-2 py-1 text-[#9b6517] rounded-full max-w-fit"><Lightbulb size={14} className="inline-block text-[#9b6517]"/> Top Computer Science Voice</div>
+                  <div className=" text-xs bg-[#fce3bc] px-2 py-1 text-[#9b6517] rounded-full max-w-fit">
+                    <Lightbulb
+                      size={14}
+                      className="inline-block text-[#9b6517]"
+                    />{" "}
+                    Top Computer Science Voice
+                  </div>
                   <div className="flex items-center pt-2">
                     <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
                     <span className="text-xs text-muted-foreground">
@@ -81,7 +99,7 @@ const HeroAbout = () => {
               </div>
             </HoverCardContent>
           </HoverCard>
-          <button className=" px-6 py-1 bg-black border-2 border-neutral-600 text-[18px] h-12 font-semibold rounded-full">
+          <button className=" hover:scale-105 transition-transform duration-300 ease-in px-6 py-1 bg-black border-[3px] border-neutral-600 text-[18px] h-12 font-semibold rounded-full">
             Resume <Download className="inline-block ml-2" />
           </button>
           <button className=" px-6 py-1 bg-[#4C67F9] text-[18px] h-12 font-semibold rounded-full">
