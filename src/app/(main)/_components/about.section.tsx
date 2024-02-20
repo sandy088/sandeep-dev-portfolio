@@ -73,20 +73,23 @@
 //     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
 //   },
 // ];
-
+'use client'
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import React from "react";
 import { about, aboutContent } from "../_constants/data";
 import Image from "next/image";
 import { StickyScroll } from "@/app/components/ui/sticky-scroll-reveal";
 
-export const AboutSection = () => {
+const AboutSection = () => {
   return (
-    <div>
-      <div className=" max-w-[1200px]  flex mx-auto flex-col gap-3 items-center mt-12">
+    <div className=" ">
+      <div className=" max-w-[1200px]  flex mx-auto flex-col gap-3 items-center mt-2 md:mt-12">
         <h2 className=" md:text-3xl font-bold my-8">About Me</h2>
         <StickyScroll content={aboutContent} />
       </div>
     </div>
   );
 };
+
+export default AboutSection;
+

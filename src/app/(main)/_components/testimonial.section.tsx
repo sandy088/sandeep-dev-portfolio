@@ -1,9 +1,9 @@
 "use client";
 import { InfiniteMovingCards } from "../../components/ui/infinite-moving-cards";
 
-export function TestimonialSection() {
+export default function TestimonialSection() {
   return (
-    <div className="h-[30rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div id="testimonials" className="h-[30rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <h2 className=" text-3xl font-bold text-center mb-8">Testimonials</h2>
       <InfiniteMovingCards
         items={testimonials}
@@ -23,9 +23,9 @@ const testimonials = [
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "One thing I absolutely liked about Sandeep is, He not only meets the requirements but also puts extra efforts and do more than expectations. I was hired Sandeep for 2 Two of my projects & absolutely great work done by him. I would highly recommend him for any development project.",
+    name: "Myank",
+    title: "Freelance Client",
   },
   {
     quote: `#kudos to Sandeep Singh

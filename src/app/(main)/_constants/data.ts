@@ -1,5 +1,6 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 import { FaProjectDiagram } from "react-icons/fa";
 import { VscGithubAction } from "react-icons/vsc";
 
@@ -22,50 +23,44 @@ export const navbarOptions:navbarOptionsProps[] = [
   {
     id:1,
     name: "Home",
-    link: "#"
+    link: "home"
   },
   {
     id:2,
     name: "About",
-    link: "#"
+    link: "about"
   },
   {
     id:3,
     name: "Skills",
-    link: "#"
+    link: "skills"
   },
   {
     id:4,
     name: "Projects",
-    link: "#"
+    link: "projects"
   },
-  {
-    id:5,
-    name: "Contact",
-    link: "#"
-  
-  }
 ]
 export const aboutContent = [
   {
-    title: "Collaborative Editing",
+    title: "🚀 Fourth-Year College Student",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Currently pursuing a Bachelor of Technology in Computer Science at BGIET, Sangrur, with a commendable CGPA of 7.80.",
   },
   {
-    title: "Real time changes",
+    title: "💻 Proactive Freelancer:",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Currently freelancing with a focus on creating robust, user-friendly applications. Adept at translating ideas into functional and aesthetically pleasing digital experiences.",
   },
   {
-    title: "Version control",
+    title: "🌐 Tech Explorer",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "As a Full Stack Developer Intern at Curious Ecosystem, I lead an innovative project there. Leverage technologies such as React.js, Next.js, and Tailwind CSS, I ensure seamless and impactful user interfaces.",
   },
   {
-    title: "Running out of content",
+    title: "🚀 Continuous Improvement & Learning",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Dedicated to a daily journey of self-improvement by delving into and applying cutting-edge technologies. Passionate about staying ahead in the ever-evolving tech landscape.",
   },
 ];
 export const about = {
@@ -108,14 +103,14 @@ export const projects:projectsProps[] = [
     imgUrl: 'https://res.cloudinary.com/daqa5apjj/image/upload/v1708356733/Screenshot_2023-11-22_170909_m1rqyy.jpg',
     href: "https://youtube-clone-react-indol.vercel.app/"
   },
-  {
-    title: "Discord Generative Ai- bot",
-    description:
-      "A Generative-Ai Discord bot Which can generate Images",
-    skills: ["Nodejs", "AI Image Generator Model", "Discord.js"," Typsecript"],
-    imgUrl: 'https://res.cloudinary.com/daqa5apjj/image/upload/v1708356731/Code_Ai_fep9hs.png',
-    href: "https://github.com/sandy088/Discord-Ai-Art-Generator-bot"
-  },
+  // {
+  //   title: "Discord Generative Ai- bot",
+  //   description:
+  //     "A Generative-Ai Discord bot Which can generate Images",
+  //   skills: ["Nodejs", "AI Image Generator Model", "Discord.js"," Typsecript"],
+  //   imgUrl: 'https://res.cloudinary.com/daqa5apjj/image/upload/v1708356731/Code_Ai_fep9hs.png',
+  //   href: "https://github.com/sandy088/Discord-Ai-Art-Generator-bot"
+  // },
 ];
 
 export const links = [
@@ -172,27 +167,28 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "Open Source Contributor",
-    location: "@Hactoberfest 2023",
+    title: "Freelance Full-Stack Developer",
+    location: "Self-Employed",
     description:
-      `Participated in Hacktoberfest 2023, earned swags & goodies for submitting four successful pull requests to diverse open source projects. Developed valuable skills in open source development, including contributing to codebases, writing documentation, and collaborating with other developers. Among the first 40,000 contributors awarded with swags and goodies.`,
-    icon: React.createElement(VscGithubAction),
-    date: "2023",
+      "Currently freelancing with a focus on creating robust, user-friendly applications. Adept at translating ideas into functional and aesthetically pleasing digital experiences.",
+    icon: React.createElement(SiNextdotjs),
+    date: "2023 - present",
   },
   {
-    title: "Open Source Contributor ",
-    location: "GSSOC 2023",
+    title: "Full Stack Developer Intern",
+    location: "@Curious Ecosystem",
     description:
-      "Participated in GSSOC 2023, and Gained lots of learning about open source projects and collborate with developers worldwide",
-    icon: React.createElement(FaProjectDiagram),
-    date: "2023",
+      "Contributed significantly to a closed-source project, leading frontend development efforts. Utilized my expertise to implement and optimize features, fostering collaboration and innovation within the team.",
+    icon: React.createElement(SiNextdotjs),
+    date: "December 2023 - Feb 2024",
   },
+  
   {
-    title: "Full-Stack Developer",
-    location: "Freelancer",
+    title: "Full Stack Developer Intern",
+    location: "@Sensation Software Solutions Pvt. Ltd.",
     description:
-      "I'm a full-stack developer working as a freelancer. My stack includes React, Redux, TypeScript, Tailwind, Nodejs, Express.js, GraphQL, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Engaged in a six-month internship, contributing to various aspects of full-stack development. Worked on diverse projects, enhancing skills in both frontend and backend technologies.",
     icon: React.createElement(FaReact),
-    date: "2022 - present",
+    date: "July 2023 - December 2023",
   },
 ] as const;

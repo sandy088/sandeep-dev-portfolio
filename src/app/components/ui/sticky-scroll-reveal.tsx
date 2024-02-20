@@ -41,7 +41,7 @@ export const StickyScroll = ({
   return (
     <motion.div
       animate={{
-        backgroundColor: '#070707',
+        backgroundColor: '#000',
       }}
       className="h-[30rem] no-scrollbar overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
@@ -81,8 +81,10 @@ export const StickyScroll = ({
         animate={{
           background: linearGradients[activeCard % linearGradients.length],
         }}
-        className="hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden"
-      ></motion.div>
+        className="hidden lg:block h-60 object-fill w-80 rounded-md bg-white sticky top-10 overflow-hidden"
+      >
+        <img src="https://res.cloudinary.com/daqa5apjj/image/upload/v1707837707/1707044349292_3_lrrrsi.jpg" loading="lazy" alt="sandeep singh"/>
+      </motion.div>
     </motion.div>
   );
 };

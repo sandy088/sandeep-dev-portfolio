@@ -26,7 +26,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className=" max-w-[53rem] scroll-mt-28 text-center mb-10 mx-auto mt-20"
+      className=" max-w-[62rem] scroll-mt-28 text-center mb-10 mx-auto mt-20"
     >
         <div className=" md:h-[50px]">
 
