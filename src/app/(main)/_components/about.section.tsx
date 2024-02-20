@@ -73,34 +73,23 @@
 //     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
 //   },
 // ];
-
+'use client'
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import React from "react";
-import { about } from "../_constants/data";
+import { about, aboutContent } from "../_constants/data";
 import Image from "next/image";
+import { StickyScroll } from "@/app/components/ui/sticky-scroll-reveal";
 
-export const AboutSection = () => {
+const AboutSection = () => {
   return (
-    <div>
-      <div className=" max-w-[1200px]  flex mx-auto flex-col gap-3 items-center">
-        <h2 className=" md:text-5xl font-bold">About Me</h2>
-        <div className=" flex w-full gap-4 justify-between items-center my-10">
-          <div className=" flex-grow my-2 text-sm max-w-[50%]">
-            <TextGenerateEffect words={about.words1} />
-            <TextGenerateEffect words={about.words2} />
-            <TextGenerateEffect words={about.words4} />
-          </div>
-          <div className="">
-            <Image
-              src="https://res.cloudinary.com/daqa5apjj/image/upload/v1707837707/1707044349292_3_lrrrsi.jpg"
-              alt="Sandeep Singh"
-              className="object-fit rounded-md"
-              height={400}
-              width={400}
-            />
-          </div>
-        </div>
+    <div className=" ">
+      <div className=" max-w-[1200px]  flex mx-auto flex-col gap-3 items-center mt-2 md:mt-12">
+        <h2 className=" md:text-3xl font-bold my-8">About Me</h2>
+        <StickyScroll content={aboutContent} />
       </div>
     </div>
   );
 };
+
+export default AboutSection;
+
