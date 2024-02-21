@@ -76,7 +76,7 @@ export const projects:projectsProps[] = [
     title: "Otion- Full Stack Notion Clone",
     description: "Realtime Sync, Rich Text Editior, Dark Mode, User Authentication, and more.",
     href: "https://otion-documentation-app.vercel.app/",
-    imgUrl: "https://private-user-images.githubusercontent.com/90024312/302348507-43fc4c76-e234-4554-9b39-318949efd506.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc4NDA4OTQsIm5iZiI6MTcwNzg0MDU5NCwicGF0aCI6Ii85MDAyNDMxMi8zMDIzNDg1MDctNDNmYzRjNzYtZTIzNC00NTU0LTliMzktMzE4OTQ5ZWZkNTA2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjEzVDE2MDk1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk3YzA0YTg2YjY3M2Y2M2IzOGMxYWY4ZmUzNGM5YjdjNGI4Zjk1YTk0YTJjYTBlZGRjZTUxYWQwODk1ZThjMWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.9VjGaAKpMI0S3Ylxf8PFuKg9mkUqchrJ1J0F-Ihaw4M",
+    imgUrl: "https://res.cloudinary.com/daqa5apjj/image/upload/v1708493057/302348507-43fc4c76-e234-4554-9b39-318949efd506_iuv2oa.jpg",
     skills:['nextjs14','convex','tailwindcss','typsecript','react']
   },
   {
